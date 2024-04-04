@@ -163,6 +163,7 @@ footer {
     -webkit-text-fill-color: transparent;
 }
 
+
 .profile-name>h4 {
     font-size: 3.5rem;
     color: var(--color-lavender);
@@ -207,6 +208,16 @@ footer {
     margin-bottom: 0.5rem;
 }
 
+.project-item a {
+    color: var(--color-sapphire);
+    text-decoration: none;
+}
+
+.project-item a:hover {
+    color: var(--color-blue);
+    text-decoration: underline;
+}
+
 #contact h2 {
     text-align: center;
     color: var(--color-sky);
@@ -224,10 +235,133 @@ footer {
 }
 
 
+#contact a {
+    color: var(--color-sapphire);
+    text-decoration: none;
+}
+
+#contact a:hover {
+    color: var(--color-blue);
+    text-decoration: underline;
+}
+
+
 footer {
     padding: 1rem;
     background-color: var(--color-surface);
     text-align: center;
     color: var(--color-text);
     width: 100%;
+}
+
+
+
+
+/* For tablets */
+@media (max-width: 768px) {
+    h1, nav {
+        width: 100%;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .profile {
+        flex-direction: column;
+    }
+
+    .profile-name, .profile-picture {
+        width: 100%;
+    }
+
+    .profile-name>h3, .profile-name>h4 {
+        font-size: 3rem;
+    }
+
+    #about h2, #projects h2, #contact h2 {
+        font-size: 4rem;
+    }
+
+    .project-item h3 {
+        font-size: 2.5rem;
+    }
+
+    .about-content, .project-item p, #contact p {
+        font-size: 1.2rem;
+    }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+    h1, nav {
+        width: 100%;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .profile {
+        flex-direction: column;
+    }
+
+    .profile-name, .profile-picture {
+        width: 100%;
+    }
+
+    .profile-name>h3, .profile-name>h4 {
+        font-size: 2rem;
+    }
+
+    #about h2, #projects h2, #contact h2 {
+        font-size: 3rem;
+    }
+
+    .project-item h3 {
+        font-size: 2rem;
+    }
+
+    .about-content, .project-item p, #contact p {
+        font-size: 1rem;
+    }
+}
+
+
+/* For tablets */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: var(--color-surface);
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav li {
+        margin: 1rem 0;
+    }
+
+    nav:hover ul {
+        display: flex;
+    }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+    nav ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: var(--color-surface);
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav li {
+        margin: 1rem 0;
+    }
+
+    nav:hover ul {
+        display: flex;
+    }
 }
