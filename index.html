@@ -4,13 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <meta name="description"
+        content="Portfolio of Rumi Axolotl, a backend developer specializing in Node.js and Linux.">
+    <title>Rumi Axolotl - Backend Developer Portfolio</title>
     <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="icon" href="assets/img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <header>
         <h1>Rumi Axolotl</h1>
+        <button id="menu-toggle" aria-label="Toggle Menu">
+            <i class="fas fa-bars"></i> </button>
         <nav>
             <ul>
                 <li><a href="#about">About Me</a></li>
@@ -18,14 +31,21 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+
+        <div class="theme-switch-wrapper">
+            <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox" />
+                <div class="slider round"></div>
+            </label>
+        </div>
     </header>
 
     <main>
         <section id="about" class="container">
             <h2>About Me</h2>
             <div class="profile">
-                <img src="./assets/img/Profile.png" alt="Profile Picture" class="profile-picture">
-                <div class="profile-name">
+                <img src="./assets/img/Profile.png" alt="Profile Picture of Rumi Axolotl" class="profile-picture">
+                <div class="profile-info">
                     <h3>Rumi Axolotl</h3>
                     <h4>Backend Developer</h4>
                     <p class="about-content">
@@ -38,41 +58,114 @@
                         to date with the latest technology in the industry.
                     </p>
 
+                    <div class="skills">
+                        <h4>Skills</h4>
+                        <ul>
+                            <li>
+                                <span class="skill-name">Node.js</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 80%;"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="skill-name">JavaScript</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 80%;"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="skill-name">Linux</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 90%;"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="skill-name">Express.js</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 60%;"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="skill-name">Docker</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 60%;"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="skill-name">SQL</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 80%;"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="skill-name">Git</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 95%;"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="skill-name">REST APIs</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 60%;"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-
+            </div>
         </section>
 
         <section id="projects" class="container">
             <h2>Projects</h2>
             <div class="project-item">
                 <h3>Hyprland-config</h3>
+                <!-- <img src="path/to/hyprland-screenshot.png" alt="Screenshot of Hyprland-config" class="project-image"> -->
                 <p>
                     Dotfile config for ArchLinux with Hyprland, using Catppuccin color scheme.
                     With waybar, wlogout, hyprlock, hypridle and other stuffs.
-                    <a href="https://github.com/RumiAxolotl/hyprland-config" target="_blank">Project URL</a>
                 </p>
+                <p><strong>Technologies:</strong> Shell Scripting, Linux Configuration</p>
+                <p><strong>Features:</strong> Highly customized environment, efficient workflow.</p>
+                <a href="https://github.com/RumiAxolotl/hyprland-config" target="_blank" rel="noopener noreferrer"
+                    class="project-link">View Project</a>
             </div>
+
             <div class="project-item">
                 <h3>Recruit Website</h3>
+                <!-- <img src="path/to/recruit-screenshot.png" alt="Screenshot of Recruit Website" class="project-image"> -->
                 <p>
                     The website was built for employers and candidates to access with the purpose of finding suitable
                     jobs.
-                    <a href="https://github.com/RumiAxolotl/recruit_website" target="_blank">Project URL</a>
                 </p>
+                <p><strong>Technologies:</strong> Node.js, Express.js, [Database if any]</p>
+                <p><strong>Features:</strong> User authentication, job posting, search functionality.</p>
+                <a href="https://github.com/RumiAxolotl/recruit_website" target="_blank" rel="noopener noreferrer"
+                    class="project-link">View Project</a>
             </div>
         </section>
 
         <section id="contact" class="container">
             <h2>Contact Me</h2>
-            <p>If you're interested in working together or just want to say hi, don't hesitate to reach out!</p>
+            <p>Let's connect! I'm always open to discussing new opportunities and collaborations.</p>
             <p>Email: <a href="mailto:rumiaxolotl@gmail.com">rumiaxolotl@gmail.com</a></p>
+            <div class="social-links">
+                <a href="https://github.com/RumiAxolotl" target="_blank" rel="noopener noreferrer" class="github-icon">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/rumiaxolotl/" target="_blank" rel="noopener noreferrer"
+                    class="linkedin-icon">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
         </section>
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+            <p>&copy; 2023 Rumi Axolotl. All rights reserved.</p>
         </div>
     </footer>
+    <script src="assets/js/index.js"></script>
 </body>
+
 </html>
