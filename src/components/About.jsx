@@ -23,14 +23,14 @@ export default function About() {
 
           <Reveal delay={100} className="about-info">
             <h3 className="about-name">Rumi Axolotl</h3>
-            <h4 className="about-role">Backend Developer</h4>
+            <h4 className="about-role">System Operation Engineer</h4>
             <p className="about-text">
-              I&apos;m a software developer with experience in Node.js and Linux. I enjoy building
-              efficient and scalable web applications using Node.js and leveraging the power of
-              Linux for server management. With strong problem-solving skills and attention to
-              detail, I strive to provide high-quality software solutions. I am passionate about
-              continuous learning and staying up to date with the latest technology in the
-              industry.
+              I&apos;m a system operation engineer working with Linux, virtualization, and
+              automation. At Vietnix, I operate high-availability infrastructure built on Proxmox
+              and Virtuozzo, and manage shared hosting environments serving thousands of websites.
+              I enjoy building automation tools and self-hosted solutions to streamline operations,
+              backed by strong Node.js and backend development experience. I&apos;m always learning
+              and staying up to date with the latest technology in the industry.
             </p>
           </Reveal>
         </div>

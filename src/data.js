@@ -1,28 +1,41 @@
 export const skills = [
-  { name: 'Node.js', level: 80 },
-  { name: 'JavaScript', level: 80 },
   { name: 'Linux', level: 90 },
-  { name: 'Express.js', level: 60 },
-  { name: 'Docker', level: 60 },
-  { name: 'SQL', level: 80 },
-  { name: 'Git', level: 95 },
-  { name: 'REST APIs', level: 60 },
+  { name: 'Virtualization (Proxmox, Virtuozzo)', level: 70 },
+  { name: 'Shell Scripting', level: 85 },
+  { name: 'Web Hosting (cPanel, CloudLinux)', level: 75 },
+  { name: 'Monitoring (Grafana, Prometheus, Loki)', level: 75 },
+  { name: 'Go', level: 80 },
+  { name: 'Docker', level: 65 },
+  { name: 'Git', level: 90 },
 ];
 
 export const projects = [
   {
-    title: 'Hyprland-config',
+    title: 'Axolotl-Hyprland',
     description:
       'Dotfile config for ArchLinux with Hyprland, using Catppuccin color scheme. With waybar, wlogout, hyprlock, hypridle and other stuffs.',
     tech: ['Shell Scripting', 'Linux Configuration'],
-    url: 'https://github.com/RumiAxolotl/hyprland-config',
+    url: 'https://github.com/RumiAxolotl/Axolotl-hyprland',
+    preview: {
+      dark: '/portfolio/projects/axolotl-hyprland/dark.png',
+      light: '/portfolio/projects/axolotl-hyprland/light.png',
+    },
   },
+];
+
+export const experience = [
   {
-    title: 'Recruit Website',
-    description:
-      'The website was built for employers and candidates to access with the purpose of finding suitable jobs.',
-    tech: ['Node.js', 'Express.js', 'MongoDB'],
-    url: 'https://github.com/RumiAxolotl/recruit_website',
+    company: 'Vietnix Solutions and Technology JSC',
+    role: 'System Operation Engineer / R&D Team',
+    period: '10/2025 — Present',
+    points: [
+      'Operated and maintained high-availability virtualization platforms (Proxmox, Virtuozzo) across VPS node clusters.',
+      'Managed cPanel/WHM and CloudLinux shared hosting, optimizing resources for thousands of hosted websites.',
+      'Planned and executed large-scale server migrations across physical nodes with minimal downtime.',
+      'Developed CLI tools (Go) and Bash scripts to automate internal monitoring and streamline team workflows.',
+      'Deployed a centralized monitoring and logging stack (Grafana, Prometheus, Loki) and optimized bottlenecks proactively.',
+      'Implemented open-source, self-hosted solutions to cut infrastructure costs and strengthen security.',
+    ],
   },
 ];
 
