@@ -17,8 +17,8 @@ export const projects = [
     tech: ['Shell Scripting', 'Linux Configuration'],
     url: 'https://github.com/RumiAxolotl/Axolotl-hyprland',
     preview: {
-      dark: '/portfolio/projects/axolotl-hyprland/dark.png',
-      light: '/portfolio/projects/axolotl-hyprland/light.png',
+      dark: '/projects/axolotl-hyprland/dark.png',
+      light: '/projects/axolotl-hyprland/light.png',
     },
   },
 ];

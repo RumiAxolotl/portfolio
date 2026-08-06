@@ -14,7 +14,7 @@ export default function About() {
             <div className="avatar">
               <div className="avatar-ring" />
               <img
-                src="/portfolio/Profile.png"
+                src="/Profile.png"
                 alt="Profile Picture of Rumi Axolotl"
                 className="avatar-image"
               />
