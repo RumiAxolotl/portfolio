@@ -2,10 +2,12 @@ import { useState } from 'react';
 import { useTheme } from '../context/ThemeContext.jsx';
 
 const links = [
-  { label: 'About', href: '#about' },
-  { label: 'Experience', href: '#experience' },
-  { label: 'Projects', href: '#projects' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'Home', href: 'https://rumiaxolotl.site/' },
+  { label: 'Portfolio', href: 'https://portfolio.rumiaxolotl.site/' },
+  { label: 'About', href: 'https://portfolio.rumiaxolotl.site/#about' },
+  { label: 'Experience', href: 'https://portfolio.rumiaxolotl.site/#experience' },
+  { label: 'Projects', href: 'https://portfolio.rumiaxolotl.site/#projects' },
+  { label: 'Contact', href: 'https://portfolio.rumiaxolotl.site/#contact' },
 ];
 
 export default function Navbar() {
@@ -14,7 +16,7 @@ export default function Navbar() {
 
   return (
     <header className="navbar">
-      <a href="#about" className="navbar-brand">RumiAxolotl</a>
+      <a href="https://rumiaxolotl.site/" className="navbar-brand">RumiAxolotl</a>
 
       <nav className={`navbar-links ${open ? 'open' : ''}`} aria-label="Navigation">
         {links.map((l) => (
